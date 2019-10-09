@@ -42,7 +42,7 @@ app.use((req, res, next) => {
 app.use('/', require('./routes/index'));
 
 app.get('*', (req, res) => {
-    res.render('notfound');
+    res.render('no api found');
 });
 
 app.listen(process.env.PORT, (err) => {
